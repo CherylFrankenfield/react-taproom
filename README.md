@@ -59,6 +59,10 @@ _If you have any issues, questions, ideas or concerns, please contact us._
 * Node.js
 * Webpack
 
+## Component Tree
+
+![img_4928](https://user-images.githubusercontent.com/32469854/36046983-97a5b716-0d8f-11e8-971b-61525d4ba878.jpg)
+
 ### License
 
 *This is open source so feel free to grab and use.*
