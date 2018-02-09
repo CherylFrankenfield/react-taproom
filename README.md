@@ -11,6 +11,7 @@ _Translate a previous Angular project into a React project, which is creating a 
 ## Setup/Installation Requirements
 
 * Git clone https://github.com/CherylFrankenfield/react-taproom.git
+
 Run:
 * npm init
 * npm install
@@ -36,8 +37,14 @@ _The app will ._
     * Develop custom style using CSS objects and modules with React.
 
 ### 5. Notes - Issues and questions
+1. I was curious about basic naming conventions for component trees...are home/body synonymous? Is something else used?
+2. Error page messages - Typically these don't include a header or footer on most pages I've come across. I was curious where / how this is implemented different ways in the router tags.
+3. I considered including a modal or pop-up screen to ask whether you are 21 or not in order to enter the site. With React and React Router, I was curious how that type of page would be implemented.
+4. As a real-world project, I would imagine a front-facing, patron website would be a little different than an employee portal / content management system / e-commerce functionality and how designers/developers approach combining the two or maybe they don't. I would imagine an employee would log in to an internal system that is somehow connected to the public-facing site (if there's a shopping cart or other plugins, like real-time draft list posting, etc.). Otherwise, for this project, I combined the two with the approach of using a Login button for employees/admin route, which would render for internal use only.
+5. I had some organizational roadblocks today, based on not being entirely sure how to break out components for React into the smallest, modular pieces of UI. Building out the first component tree was very useful for routing purposes and comparing the Angular app's functionality and where I thought it should live in a React app. Then after building a few components that I felt good about, I quickly realized I needed wireframes of design (image #2) in order to use them as a roadmap. That was extremely useful visual tool.
 
-### 6. Description - Thoughts on differences between Angular vs. React     
+### 6. Description - Thoughts on differences between Angular vs. React
+    
 
 ## Known Bugs
 
