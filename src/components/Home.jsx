@@ -1,9 +1,14 @@
 import React from 'react';
+import Hero from './Hero';
+import About from './About';
+import Quote from './Quote';
 
 function Home() {
   return(
     <div>
-      Home works! 
+      <Hero />
+      <About />
+      <Quote />
     </div>
   );
 }
