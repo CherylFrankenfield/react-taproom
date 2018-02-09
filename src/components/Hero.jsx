@@ -8,7 +8,7 @@ function Hero() {
     alignItems: 'center',
     overflow: 'hidden',
     backgroundSize: 'cover',
-    width: '100%'
+    width: '100%',
   };
 
   return(
