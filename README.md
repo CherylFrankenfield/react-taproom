@@ -10,14 +10,12 @@ _Translate a previous Angular project into a React project, which is creating a 
 
 ## Setup/Installation Requirements
 
-_In terminal:_
--------
 * Git clone https://github.com/CherylFrankenfield/react-taproom.git
-* Run:
-npm init
-npm install
-webpack
-npm run start
+Run:
+* npm init
+* npm install
+* webpack
+* npm run start
 
 ## Planning
 
