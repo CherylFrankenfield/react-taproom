@@ -24,9 +24,17 @@ Run:
   * This app uses Webpack.
 
 ### 2. Specs
-_The app will ._
-* _Input: ._
-* _Output: ._
+_The app will allow an employee to click admin link to view internal functionality._
+* _Input: Employee clicks Login button._
+* _Output: Employee is sent to internal admin page._
+
+_The app will allow an employee to view current keg/draft list info._
+* _Input: Employee clicks Login button._
+* _Output: Employee is sent to internal admin page and draft list of available beers renders._
+
+_The app will allow an employee to add a new keg/draft item to list._
+* _Input: Employee enters data in form._
+* _Output: New beer data is added to draft list._
 
 ### 3. Integration/User Stories
   * Integrate feature that will allow user to
@@ -44,11 +52,11 @@ _The app will ._
 5. I had some organizational roadblocks today, based on not being entirely sure how to break out components for React into the smallest, modular pieces of UI. Building out the first component tree was very useful for routing purposes and comparing the Angular app's functionality and where I thought it should live in a React app. Then after building a few components that I felt good about, I quickly realized I needed wireframes of design (image #2) in order to use them as a roadmap. That was extremely useful visual tool.
 
 ### 6. Description - Thoughts on differences between Angular vs. React
-    
+While I really enjoyed Angular for its functionality, structure and organization, so far I do see some benefits to using the React library, being its ease-of-use to get a website up and running quickly, being able to reuse components later (such as draft list in a few places), looping to create elements is pretty cool, and its speed in refreshing the DOM. Being the first week with React, it's still a little strange using CSS objects and JSX, and I'm not certain I see patterns yet for writing CSS one way or the other (other than issues with pseudo classes). I did really like using Typescript and enjoyed Angular CLI's organization of packaging ts, css, html and testing files together.
 
 ## Known Bugs
 
-_Text._
+_T_
 
 ## Support and contact details
 
