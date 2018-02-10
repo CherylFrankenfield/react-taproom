@@ -72,6 +72,18 @@ _If you have any issues, questions, ideas or concerns, please contact us._
 * Node.js
 * Webpack
 
+## Component Tree
+
+![img_4928](https://user-images.githubusercontent.com/32469854/36046983-97a5b716-0d8f-11e8-971b-61525d4ba878.jpg)
+
+## Wire frame 
+
+![img_4932](https://user-images.githubusercontent.com/32469854/36055065-9de6c704-0dae-11e8-8f00-4d23e9482061.jpg)
+
+## Angular App basic components
+
+![img_4926](https://user-images.githubusercontent.com/32469854/36047227-48bb475a-0d90-11e8-8bf9-9dc077b0339f.jpg)
+
 ### License
 
 *This is open source so feel free to grab and use.*
