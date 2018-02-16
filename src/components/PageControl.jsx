@@ -6,14 +6,9 @@ class PageControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      taplist: {}
     };
     this.handleNewKegSubmission = this.handleNewKegSubmission.bind(this);
-  }
-
-  handleNewKegSubmission(){
-    let newKegAdded = this.state.KegAdded;
-    this.setState({KegAdded: newKegAdded});
   }
 
   render(){
