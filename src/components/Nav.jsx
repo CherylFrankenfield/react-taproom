@@ -10,7 +10,7 @@ function Nav() {
             background-color: black;
             padding: 10px;
             color: white;
-            margin: 10px;
+            width: 100vw;
           }
           ul {
             display: flex;

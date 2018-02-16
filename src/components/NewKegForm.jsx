@@ -3,10 +3,13 @@ import {Button, Icon} from 'react-materialize';
 import PropTypes from 'prop-types';
 
 function NewKegForm(props){
+  const KegFormButton = {
+    width: '10%'
+  };
   return(
     <div>
-      <h3>Add new keg:</h3>
       <form onClick={props.handleNewKegSubmission}>
+        <h4>Add new keg:</h4>
         <label>Brewery Name: </label>
         <input
           type='text'
@@ -31,10 +34,15 @@ function NewKegForm(props){
         <input
           type='text'
           id='description'/>
-        <Button type='submit' waves='light'>Add<Icon left>local_drink</Icon></Button>
+        <Button style={KegFormButton} type='submit' waves='light'>Add<Icon left>local_drink</Icon></Button>
       </form>
       <style jsx>
         {`
+          form {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+          }
           input {
             width: 40%;
           }
