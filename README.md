@@ -44,15 +44,22 @@ _The app will allow an employee to add a new keg/draft item to list._
     * Include Bootstrap or other style library next week.
     * Develop custom style using CSS objects and modules with React.
 
-### 5. Notes - Issues and questions
+### 5. Notes - Issues and questions (2/9/18)
 1. I was curious about basic naming conventions for component trees...are home/body synonymous? Is something else used?
 2. Error page messages - Typically these don't include a header or footer on most pages I've come across. I was curious where / how this is implemented different ways in the router tags.
 3. I considered including a modal or pop-up screen to ask whether you are 21 or not in order to enter the site. With React and React Router, I was curious how that type of page would be implemented.
 4. As a real-world project, I would imagine a front-facing, patron website would be a little different than an employee portal / content management system / e-commerce functionality and how designers/developers approach combining the two or maybe they don't. I would imagine an employee would log in to an internal system that is somehow connected to the public-facing site (if there's a shopping cart or other plugins, like real-time draft list posting, etc.). Otherwise, for this project, I combined the two with the approach of using a Login button for employees/admin route, which would render for internal use only.
 5. I had some organizational roadblocks today, based on not being entirely sure how to break out components for React into the smallest, modular pieces of UI. Building out the first component tree was very useful for routing purposes and comparing the Angular app's functionality and where I thought it should live in a React app. Then after building a few components that I felt good about, I quickly realized I needed wireframes of design (image #2) in order to use them as a roadmap. That was an extremely useful visual tool.
 
-### 6. Description - Thoughts on differences between Angular vs. React
+### 6. Description - Thoughts on differences between Angular vs. React (2/9/18)
 While I really enjoyed Angular for its functionality, structure and organization, so far I do see some benefits to using the React library, being its ease-of-use to get a website up and running quickly, being able to reuse components later (such as draft list in a few places), looping to create elements is pretty cool, and its speed in refreshing the DOM. Being the first week with React, it's still a little strange using CSS objects and JSX, and I'm not certain I see patterns yet for writing CSS one way or the other (other than issues with pseudo classes). I did really like using Typescript and enjoyed Angular CLI's organization of packaging ts, css, html and testing files together.
+
+### 7. Decisions on State Management (2/16/18)
+This week we learned about state management in the closest common ancestor of components and lifting state. Today, I sketched out my routes, wireframe and component tree again and made the decision to house state in a new component -- PageControl. App will now contain Header(Nav), PageControl, Footer and Error404. The components that I see thus far containing state are: PageControl, KegList, Keg, AdminControl and NewKegForm. Components without state are: Home, Hero, Quote, FeaturesList and Feature. In future iterations, I anticipate more state-based components under AdminControl for when we edit and delete kegs (additional CRUD implementation). Also future user stories in /events or /home routes may contain state, for example, if listing upcoming events or updated draft specials was a feature request that needed to be dynamic and display on those routes (another reason for PageControl as a common ancestor and keeping state out for now, but being nimble enough to add it in if necessary). Also I wanted to keep state out of App, not sure if that's a best practice and/or the pros/cons of doing so.
+
+Questions:
+--Similar to Angular's pipes, how to add logic to AdminControl components and pass it to KegList/Keg and where is the best place to keep that logic?
+--Pros/cons of keeping state in or out of App component?
 
 ## Known Bugs
 
@@ -69,7 +76,6 @@ _If you have any issues, questions, ideas or concerns, please contact me._
 * JavaScript
 * HTML
 * CSS
-* Node.js
 * Webpack
 
 ## Component Tree, State Management, Wireframe and Route Updates - v2 (2/16/18)
