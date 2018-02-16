@@ -1,9 +1,11 @@
 import React from 'react';
 
 function Quote() {
+
   return(
     <div>
-      Quote works!
+      <h4>"If the beer be small, then let the mug be large."</h4>
+      <h5>--Sir Arthur Conan Doyle</h5>
     </div>
   );
 }

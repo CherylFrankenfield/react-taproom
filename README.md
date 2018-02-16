@@ -37,8 +37,9 @@ _The app will allow an employee to add a new keg/draft item to list._
 * _Output: New beer data is added to draft list._
 
 ### 3. Integration/User Stories
-  * Integrate feature that will allow user to
-  * Future user story may include:
+  * Integrate feature that will allow user to see interactive freshness indicator of how much beer is left in keg with status bar.
+
+  * Future user story may include: adding Moment.js to dynamically update when the last time an employee updated the draft list so patrons can see what new beers have been added since last time checking website. 
 
 ### 4. UX/UI
     * Include Bootstrap or other style library next week.
@@ -59,6 +60,7 @@ This week we learned about state management in the closest common ancestor of co
 
 Questions:
 --Similar to Angular's pipes, how to add logic to AdminControl components and pass it to KegList/Keg and where is the best place to keep that logic?
+
 --Pros/cons of keeping state in or out of App component?
 
 ## Known Bugs
