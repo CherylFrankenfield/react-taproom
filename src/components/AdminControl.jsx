@@ -5,13 +5,13 @@ import PropTypes from 'prop-types';
 function AdminControl(props) {
   return(
     <div>
-      <NewKegForm onNewKegSubmission={props.handleNewKegSubmission}/>
+      <NewKegForm onNewKegSubmission={props.onNewKegSubmission}/>
     </div>
   );
 }
 
 AdminControl.propTypes = {
-  handleNewKegSubmission: PropTypes.func
+  onNewKegSubmission: PropTypes.func
 };
 
 export default AdminControl;

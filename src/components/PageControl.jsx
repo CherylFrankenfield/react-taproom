@@ -6,16 +6,22 @@ class PageControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      taplist: {}
+      masterTapList: []
     };
-    this.handleNewKegSubmission = this.handleNewKegSubmission.bind(this);
+    this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
+  }
+
+  handleAddingNewKegToList(newKeg) {
+    let newTapList = this.state.masterTapList.slice();
+    newTapList.push(newKeg);
+    this.setState({masterTapList: newTapList});
   }
 
   render(){
     return(
       <div>
-        <KegList taplist={this.state}/>
-        <AdminControl handleNewKegSubmission={this.handleNewKegSubmission}/>
+        <KegList tapList={this.state.masterTapList}/>
+        <AdminControl onNewKegSubmission={this.handleAddingNewKegToList}/>
       </div>
     );
   }

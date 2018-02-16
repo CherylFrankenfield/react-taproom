@@ -71,6 +71,9 @@ function NewKegForm(props){
           input {
             width: 40%;
           }
+          textarea {
+            width: 40%;
+          }
           label {
             font-size: 20px;
             margin-top: 20px;

@@ -5,6 +5,7 @@ import Home from './Home';
 import AdminControl from './AdminControl';
 import Error404 from './Error404';
 import PageControl from './PageControl';
+import KegList from './KegList';
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/admin' component={AdminControl}/>
+        <Route path='/draftlist' component={KegList}/>
         <Route component={Error404} />
       </Switch>
       <Footer />
