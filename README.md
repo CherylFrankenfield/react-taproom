@@ -72,7 +72,11 @@ _If you have any issues, questions, ideas or concerns, please contact us._
 * Node.js
 * Webpack
 
-## Component Tree
+## Component Tree, State Management, Wireframe and Route Updates - v2 (2/16/18)
+
+![img_4962](https://user-images.githubusercontent.com/32469854/36319780-e4176ef0-12f8-11e8-88a4-c5d1297e38c1.jpg)
+
+## Component Tree Assets - v1 (2/9/18)
 
 ![img_4928](https://user-images.githubusercontent.com/32469854/36046983-97a5b716-0d8f-11e8-971b-61525d4ba878.jpg)
 
