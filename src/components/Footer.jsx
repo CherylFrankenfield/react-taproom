@@ -15,7 +15,11 @@ function Footer() {
   return(
     <div style={footer}>
       <div>
-        Social Icons go here
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+        </ul>
       </div>
       <div>
         <ul>
