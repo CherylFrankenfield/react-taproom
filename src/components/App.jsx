@@ -12,6 +12,7 @@ function App() {
   return(
     <div>
       <Nav />
+      <PageControl />
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/admin' component={AdminControl}/>

@@ -20,7 +20,7 @@ class PageControl extends React.Component {
   render(){
     return(
       <div>
-        <KegList tapList={this.state.masterTapList}/>
+        <KegList newTapList={this.state.masterTapList}/>
         <AdminControl onNewKegSubmission={this.handleAddingNewKegToList}/>
       </div>
     );
