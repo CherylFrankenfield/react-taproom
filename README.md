@@ -15,7 +15,7 @@ _Translate a previous Angular project into a React project, which is creating a 
 Run:
 * npm init
 * npm install
-* webpack
+* webpack-dev-server
 * npm run start
 
 ## Planning
@@ -39,7 +39,11 @@ _The app will allow an employee to add a new keg/draft item to list._
 ### 3. Integration/User Stories
   * Integrate feature that will allow user to see interactive freshness indicator of how much beer is left in keg with status bar.
 
-  * Future user story may include: adding Moment.js to dynamically update when the last time an employee updated the draft list so patrons can see what new beers have been added since last time checking website. 
+  * Future user story may include: adding Moment.js to dynamically update when the last time an employee updated the draft list so patrons can see what new beers have been added since last time checking website.
+
+  * Future user story may include: Add # of pints (124) in Keg to admin section to be able to connect to freshness status bar.
+
+  * Future user story may include: Add beer type to admin section to be able to sort in patron view.
 
 ### 4. UX/UI
     * Include Bootstrap or other style library next week.
@@ -65,7 +69,7 @@ Questions:
 
 ## Known Bugs
 
-_T_
+_Current bug is map is undefined in KegList component._
 
 ## Support and contact details
 
