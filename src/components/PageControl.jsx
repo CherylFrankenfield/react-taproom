@@ -1,6 +1,9 @@
 import React from 'react';
 import AdminControl from './AdminControl';
 import KegList from './KegList';
+import Home from './Home';
+import Error404 from './Error404';
+import { Switch, Route } from 'react-router-dom';
 
 class PageControl extends React.Component {
   constructor(props) {
