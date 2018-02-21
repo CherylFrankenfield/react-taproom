@@ -20,6 +20,12 @@ class PageControl extends React.Component {
   render(){
     return(
       <div>
+        <Switch>
+          <Route exact path='/' component={Home}/>
+          <Route path='/admin' component={AdminControl}/>
+          <Route path='/draftlist' component={KegList}/>
+          <Route component={Error404} />
+        </Switch>
         <KegList newTapList={this.state.masterTapList}/>
         <AdminControl onNewKegSubmission={this.handleAddingNewKegToList}/>
       </div>
