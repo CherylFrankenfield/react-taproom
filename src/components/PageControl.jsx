@@ -22,12 +22,10 @@ class PageControl extends React.Component {
       <div>
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route path='/admin' component={AdminControl}/>
-          <Route path='/draftlist' component={KegList}/>
+          <Route path='/admin' render={()=><AdminControl onNewKegSubmission={this.handleAddingNewKegToList}/>}/>
+          <Route path='/draftlist' render={()=><KegList newTapList={this.state.masterTapList}/>}/>
           <Route component={Error404} />
         </Switch>
-        <KegList newTapList={this.state.masterTapList}/>
-        <AdminControl onNewKegSubmission={this.handleAddingNewKegToList}/>
       </div>
     );
   }
