@@ -9,7 +9,23 @@ class PageControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterTapList: []
+      masterTapList: [
+        { brewery: 'Fort George',
+          beer: 'Three Wise Men',
+          abv: 13,
+          location: 'Astoria, OR',
+          price: 7,
+          description: 'boozy, yet light-bodied stout'
+        },
+        { brewery: 'Breakside Brewery',
+          beer: 'Back to The Future IPA',
+          abv: 7,
+          location: 'Portland, OR',
+          price: 6,
+          description: 'Epic local hops with this IPA'
+
+        }
+      ]
     };
     this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
   }
