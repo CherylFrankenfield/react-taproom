@@ -30,7 +30,7 @@ class PageControl extends React.Component {
   }
 
   handleAddingNewKegToList(newKeg) {
-    console.log(newKeg);
+    // console.log(newKeg);
     let newTapList = this.state.masterTapList.slice();
     newTapList.push(newKeg);
     this.setState({masterTapList: newTapList});
