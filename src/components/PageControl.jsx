@@ -23,7 +23,6 @@ class PageControl extends React.Component {
           location: 'Portland, OR',
           price: 6,
           description: 'Epic local hops with this IPA'
-
         }
       ]
     };
