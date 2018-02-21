@@ -11,12 +11,7 @@ function App() {
   return(
     <div>
       <Nav />
-      <Switch>
-        <Route exact path='/' component={Home}/>
-        <Route path='/admin' component={AdminControl}/>
-        <Route path='/draftlist' component={KegList}/>
-        <Route component={Error404} />
-      </Switch>
+      
       <Footer />
     </div>
   );
