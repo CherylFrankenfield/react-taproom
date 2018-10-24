@@ -1,7 +1,7 @@
+const newrelic = require('newrelic');
 const { resolve } = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-require('newrelic');
 
 module.exports = {
 
@@ -28,6 +28,10 @@ module.exports = {
     hot: true,
     contentBase: resolve(__dirname, 'build'),
     publicPath: '/'
+  },
+
+  externals: {
+    newrelic: true
   },
 
   module: {
